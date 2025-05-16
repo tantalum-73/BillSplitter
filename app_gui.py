@@ -3,8 +3,8 @@ from tkinter import filedialog, Text, messagebox
 
 def upload_file():
     file_path = filedialog.askopenfilename(
-        title="Select Document",
-        filetypes=[("Text files", "*.txt"), ("PDF files", "*.pdf"), ("Word files", "*.docx"), ("All files", "*.*")]
+        title="Select HTML Document",
+        filetypes=[("Text files", "*.html")]
     )
     if file_path:
         messagebox.showinfo("File Selected", f"You selected:\n{file_path}")
